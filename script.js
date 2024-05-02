@@ -9,4 +9,4 @@ if (motUtilisateur === listeMots[i]) {
 }
 
 
-console.log("Votre score est de " + score + "sur 3");
+console.log("Votre score est de " + score + "sur " + listeMots.length);
