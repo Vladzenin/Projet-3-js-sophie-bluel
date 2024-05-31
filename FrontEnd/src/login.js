@@ -29,7 +29,7 @@ async function seConnecter(email, password) {
 document.addEventListener('DOMContentLoaded', (event) => {
     //Redirection Accueil en cliquant sur le logo
     document.getElementById('logo-header').addEventListener('click', function() {
-        window.location.href = '/index.html';
+        window.location.href = 'index.html';
     });
 document.querySelector('form').addEventListener('submit', async (event) => {
     //console.log("Début de l'événement submit");
@@ -41,7 +41,7 @@ document.querySelector('form').addEventListener('submit', async (event) => {
         const loginSuccessful = await seConnecter(email, password);
         if (loginSuccessful) {
             console.log("Connexion réussie");
-            window.location.href = '/index.html';
+            window.location.href = 'index.html';
         } else {
             document.getElementById('login-error').style.display = 'flex';
         }
