@@ -14,7 +14,7 @@ async function getCategories() {
     }
 }
 
-//Création des boutons de la filter bar
+//Création des boutons de la filter bar 
 async function renderFilterBar() {
     // Récupérez les catégories depuis l'API
     const categories = await getCategories();
@@ -59,7 +59,7 @@ function filterWorks(event) {
     });
 }
 
-// Ajoutez les écouteurs d'événements pour les boutons de filtrage
+// Ajoutez les écouteurs d'événements pour les boutons de filtrage au clique
 const filterButtons = document.querySelectorAll('.filter-button');
 filterButtons.forEach((button) => {
     button.addEventListener('click', filterWorks);

@@ -26,7 +26,7 @@ async function renderWorks() {
     const titleElement = document.createElement('figcaption');
     titleElement.textContent = work.title;
 
-    // Ajoutez les éléments au conteneur
+    // Ajoutez les éléments au conteneur (les rajoutent a la bonne catégorie)
     workElement.appendChild(imageElement);
     workElement.appendChild(titleElement);
     container.appendChild(workElement);
