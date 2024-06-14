@@ -27,6 +27,7 @@ async function renderFilterBar() {
     allButton.value = '0';
     allButton.addEventListener('click', filterWorks);
     filterBar.appendChild(allButton);
+    allButton.focus();
 
     // Créez un bouton pour chaque catégorie
     categories.forEach((category) => {

@@ -542,6 +542,10 @@ li:hover {
 	background-color: var(--primary-color);
 	color: white;
 }
+.filter-button:focus {
+	background-color: var(--primary-color);
+	color: white;
+}
 
 #portfolio-title {
 	display: flex;
